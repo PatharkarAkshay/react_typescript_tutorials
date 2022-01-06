@@ -2,6 +2,8 @@ import { Stats } from "fs";
 import "./App.css";
 import { Button } from "./components/Button";
 import { Container } from "./components/Container";
+import { Box } from "./components/context/Box";
+import { ThemeContextProvider } from "./components/context/ThemeContext";
 import Greet from "./components/Greet";
 import { Heading } from "./components/Heading";
 import { Input } from "./components/Input";
@@ -49,6 +51,9 @@ function App() {
       />
       <Input value="" handleChange={(e) => console.log(e.target.value)} />
       <Container styles={{ border: "1px solid black", padding: "1rem" }} />
+      <ThemeContextProvider>
+        <Box />
+      </ThemeContextProvider>
     </div>
   );
 }
