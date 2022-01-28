@@ -15,6 +15,7 @@ import { Input } from "./components/Input";
 import { Oscar } from "./components/Oscar";
 import { Person } from "./components/Person";
 import { PersonList } from "./components/PersonList";
+import { RandomNumber } from "./components/restriction/RandomNumber";
 import { Status } from "./components/Status";
 
 function App() {
@@ -72,6 +73,7 @@ function App() {
         ]}
         onClick={(item) => console.log(item)}
       />
+      <RandomNumber value={10} isPositive />
     </div>
   );
 }
