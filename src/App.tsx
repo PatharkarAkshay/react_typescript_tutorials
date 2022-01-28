@@ -1,23 +1,23 @@
 import "./App.css";
 import { Private } from "./components/auth/Private";
 import { Profile } from "./components/auth/Profile";
-import { Button } from "./components/Button";
+import { Button } from "./components/props/Button";
 import { Counter } from "./components/class/Counter";
-import { Container } from "./components/Container";
+import { Container } from "./components/props/Container";
 import { Box } from "./components/context/Box";
 import { ThemeContextProvider } from "./components/context/ThemeContext";
 import { User } from "./components/context/User";
 import { UserContextProvider } from "./components/context/UserContext";
 import { List } from "./components/generics/List";
-import Greet from "./components/Greet";
-import { Heading } from "./components/Heading";
+import Greet from "./components/props/Greet";
+import { Heading } from "./components/props/Heading";
 import { CustomButton } from "./components/html/Button";
-import { Input } from "./components/Input";
-import { Oscar } from "./components/Oscar";
-import { Person } from "./components/Person";
-import { PersonList } from "./components/PersonList";
+import { Input } from "./components/props/Input";
+import { Oscar } from "./components/props/Oscar";
+import { Person } from "./components/props/Person";
+import { PersonList } from "./components/props/PersonList";
 import { RandomNumber } from "./components/restriction/RandomNumber";
-import { Status } from "./components/Status";
+import { Status } from "./components/props/Status";
 import { Toast } from "./components/templateliterals/Toast";
 
 function App() {
