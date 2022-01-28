@@ -1,4 +1,3 @@
-import { Stats } from "fs";
 import "./App.css";
 import { Private } from "./components/auth/Private";
 import { Profile } from "./components/auth/Profile";
@@ -9,6 +8,7 @@ import { Box } from "./components/context/Box";
 import { ThemeContextProvider } from "./components/context/ThemeContext";
 import { User } from "./components/context/User";
 import { UserContextProvider } from "./components/context/UserContext";
+import { List } from "./components/generics/List";
 import Greet from "./components/Greet";
 import { Heading } from "./components/Heading";
 import { Input } from "./components/Input";
@@ -64,6 +64,14 @@ function App() {
       </UserContextProvider>
       <Counter message="The counter value is " />
       <Private component={Profile} isLoggedIn={true} />
+      <List
+        items={[
+          { id: 1, name: "Batman" },
+          { id: 2, name: "Superman" },
+          { id: 3, name: "Wonder Woman" },
+        ]}
+        onClick={(item) => console.log(item)}
+      />
     </div>
   );
 }

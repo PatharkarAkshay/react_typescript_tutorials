@@ -10,7 +10,7 @@ function Greet(props: GreetProps) {
     <div>
       <h2>
         {props.isLoggedIn
-          ? `Welcome ${props.name}! You have ${props.messageCount} unread messages`
+          ? `Welcome ${props.name}! You have ${messageCount} unread messages`
           : "Welcome guest"}
       </h2>
     </div>
