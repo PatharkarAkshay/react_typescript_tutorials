@@ -1,5 +1,7 @@
 import { Stats } from "fs";
 import "./App.css";
+import { Private } from "./components/auth/Private";
+import { Profile } from "./components/auth/Profile";
 import { Button } from "./components/Button";
 import { Counter } from "./components/class/Counter";
 import { Container } from "./components/Container";
@@ -61,6 +63,7 @@ function App() {
         <User />
       </UserContextProvider>
       <Counter message="The counter value is " />
+      <Private component={Profile} isLoggedIn={true} />
     </div>
   );
 }
