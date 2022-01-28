@@ -17,6 +17,7 @@ import { Person } from "./components/Person";
 import { PersonList } from "./components/PersonList";
 import { RandomNumber } from "./components/restriction/RandomNumber";
 import { Status } from "./components/Status";
+import { Toast } from "./components/templateliterals/Toast";
 
 function App() {
   const personName = {
@@ -74,6 +75,7 @@ function App() {
         onClick={(item) => console.log(item)}
       />
       <RandomNumber value={10} isPositive />
+      <Toast position="right-bottom" />
     </div>
   );
 }
